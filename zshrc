@@ -1,5 +1,4 @@
-
-export ZSH=/Users/amzya/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 ZSH_THEME="honukai"
 
@@ -12,7 +11,9 @@ plugins=(z git git-extras httpie zsh-autosuggestions)
 # User configuration
 
 if [ -d /apollo/env/SDETools/bin ]; then
-  PATH=/apollo/env/SDETools/bin:$PATH
+  export PATH="/apollo/env/SDETools/bin:$PATH"
+  export PATH="$PATH:/apollo/env/envImprovement/bin"
+  ENV_IMPROVEMENT_ROOT=/apollo/env/envImprovement
 fi
 
 export EDITOR='sublime'
