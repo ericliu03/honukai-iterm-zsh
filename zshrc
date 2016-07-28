@@ -10,15 +10,17 @@ plugins=(z git git-extras httpie zsh-autosuggestions)
 
 # User configuration
 
+export EDITOR='sublime'
+export PATH="/Applications/Postgres.app/Contents/Versions/9.5/bin:$PATH"
+export PATH="/usr/local/bin:$PATH"
+
 if [ -d /apollo/env/SDETools/bin ]; then
+  export EDITOR='vim'
   export PATH="/apollo/env/SDETools/bin:$PATH"
   export PATH="$PATH:/apollo/env/envImprovement/bin"
   ENV_IMPROVEMENT_ROOT=/apollo/env/envImprovement
 fi
 
-export EDITOR='sublime'
-export PATH="/Applications/Postgres.app/Contents/Versions/9.5/bin:$PATH"
-export PATH="/usr/local/bin:$PATH"
 
 # Larger bash history (allow 32³ entries; default is 500)
 export HISTSIZE=32768
