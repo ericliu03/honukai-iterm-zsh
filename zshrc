@@ -11,8 +11,10 @@ plugins=(z git git-extras httpie zsh-autosuggestions)
 # User configuration
 
 export EDITOR='sublime'
+export PATH="$HOME/bin:$PATH"
 export PATH="/Applications/Postgres.app/Contents/Versions/9.5/bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
 
 if [ -d /apollo/env/SDETools/bin ]; then
   export EDITOR='vim'
@@ -20,6 +22,10 @@ if [ -d /apollo/env/SDETools/bin ]; then
   export PATH="$PATH:/apollo/env/envImprovement/bin"
   ENV_IMPROVEMENT_ROOT=/apollo/env/envImprovement
 fi
+
+bindkey -e
+bindkey '^[[1;9C' forward-word
+bindkey '^[[1;9D' backward-word
 
 
 # Larger bash history (allow 32³ entries; default is 500)
@@ -54,7 +60,10 @@ source $ZSH/oh-my-zsh.sh
 
 # work stuff
 if [ -d /apollo/env/SDETools/bin ]; then
+  alias brazil-pycharm="brazil-python-env testrun open '/Applications/PyCharm.app'"
   alias sync_dev="ninja-dev-sync"
+  alias dk="ssh amzya.aka.corp.amazon.com"
+  alias tk="daily.rb"
   alias ssh="mssh"
   alias bba="brazil-build release & brazil-build apollo-pkg"
   alias bbr="brazil-build release"
@@ -63,3 +72,7 @@ if [ -d /apollo/env/SDETools/bin ]; then
   alias bbc="brazil ws clean && brazil-build clean"
   alias prvm="post-review --parent mainline"
 fi
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
