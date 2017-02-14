@@ -2,12 +2,22 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>AboutToPasteTabsWithCancel</key>
+	<true/>
+	<key>AboutToPasteTabsWithCancel_selection</key>
+	<integer>2</integer>
+	<key>AlternateMouseScroll</key>
+	<true/>
 	<key>AppleAntiAliasingThreshold</key>
 	<integer>1</integer>
 	<key>AppleScrollAnimationEnabled</key>
 	<integer>0</integer>
 	<key>AppleSmoothFixedFontsSizeThreshold</key>
 	<integer>1</integer>
+	<key>ConvertDosNewlines</key>
+	<false/>
+	<key>ConvertUnicodePunctuation</key>
+	<true/>
 	<key>Custom Color Presets</key>
 	<dict>
 		<key>honukai</key>
@@ -360,8 +370,24 @@
 	<false/>
 	<key>DisableFullscreenTransparency</key>
 	<false/>
+	<key>EscapeShellCharsWithBackslash</key>
+	<false/>
 	<key>GlobalKeyMap</key>
 	<dict>
+		<key>0x7f-0x100000</key>
+		<dict>
+			<key>Action</key>
+			<integer>11</integer>
+			<key>Text</key>
+			<string>0x15</string>
+		</dict>
+		<key>0x7f-0x80000</key>
+		<dict>
+			<key>Action</key>
+			<integer>11</integer>
+			<key>Text</key>
+			<string>0x17</string>
+		</dict>
 		<key>0xf700-0x300000</key>
 		<dict>
 			<key>Action</key>
@@ -386,9 +412,9 @@
 		<key>0xf702-0x300000</key>
 		<dict>
 			<key>Action</key>
-			<integer>2</integer>
+			<integer>11</integer>
 			<key>Text</key>
-			<string></string>
+			<string>0x01</string>
 		</dict>
 		<key>0xf703-0x280000</key>
 		<dict>
@@ -400,9 +426,9 @@
 		<key>0xf703-0x300000</key>
 		<dict>
 			<key>Action</key>
-			<integer>0</integer>
+			<integer>11</integer>
 			<key>Text</key>
-			<string></string>
+			<string>0x05</string>
 		</dict>
 		<key>0xf729-0x100000</key>
 		<dict>
@@ -494,15 +520,15 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>-1191 57 606 456 -1280 -34 1280 777 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>-922 254 620 392 -1280 -34 1280 777 </string>
+	<string>-923 255 620 392 -1280 -34 1280 778 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>412 491 796 473 0 0 3440 1417 </string>
+	<string>412 398 937 465 0 0 3440 1417 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
-	<string>332 833 592 584 0 0 3440 1417 </string>
+	<string>80 193 592 584 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>330 168 810 928 0 0 3440 1417 </string>
+	<string>3 135 1930 1280 0 0 3440 1418 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>1279 -105 650 1347 0 0 3440 1417 </string>
+	<string>50 1 810 775 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>0 24 1146 1391 0 0 3440 1417 </string>
 	<key>NeverWarnAboutShortLivedSessions_FA429866-B709-4B1C-916E-ABA4B9B78711</key>
@@ -756,6 +782,8 @@
 				<key>Red Component</key>
 				<real>1</real>
 			</dict>
+			<key>Badge Text</key>
+			<string></string>
 			<key>Blink Allowed</key>
 			<true/>
 			<key>Blinking Cursor</key>
@@ -2042,6 +2070,8 @@
 			<string>/Users/amzya</string>
 		</dict>
 	</array>
+	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
+	<true/>
 	<key>NoSyncDoNotWarnBeforeMultilinePaste</key>
 	<true/>
 	<key>NoSyncDoNotWarnBeforeMultilinePaste_selection</key>
@@ -2049,7 +2079,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>2C0D1779-C0F6-4A93-8699-BED769B732D8</string>
 	<key>NoSyncLastTipTime</key>
-	<real>491440355.62869501</real>
+	<real>497816263.78032202</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2058,12 +2088,74 @@
 	<true/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>491266336.78329998</real>
+	<key>NoSyncTipsDisabled</key>
+	<true/>
 	<key>NoSyncTipsToNotShow</key>
 	<array>
 		<string>000</string>
 		<string>0000</string>
 		<string>0001</string>
+		<string>0002</string>
+		<string>0003</string>
+		<string>0004</string>
+		<string>0005</string>
+		<string>0006</string>
+		<string>0007</string>
+		<string>0008</string>
+		<string>0009</string>
+		<string>0010</string>
+		<string>0011</string>
+		<string>0012</string>
+		<string>0013</string>
+		<string>0014</string>
+		<string>0015</string>
+		<string>0016</string>
+		<string>0017</string>
+		<string>0018</string>
+		<string>0019</string>
+		<string>0020</string>
+		<string>0021</string>
+		<string>0022</string>
+		<string>0023</string>
+		<string>0024</string>
+		<string>0025</string>
+		<string>0026</string>
+		<string>0027</string>
+		<string>0028</string>
+		<string>0029</string>
+		<string>0030</string>
+		<string>0031</string>
+		<string>0032</string>
+		<string>0033</string>
+		<string>0034</string>
+		<string>0035</string>
+		<string>0036</string>
+		<string>0037</string>
+		<string>0038</string>
+		<string>0039</string>
+		<string>0040</string>
+		<string>0041</string>
+		<string>0042</string>
+		<string>0043</string>
+		<string>0044</string>
+		<string>0045</string>
+		<string>0046</string>
+		<string>0047</string>
+		<string>0048</string>
+		<string>0049</string>
 	</array>
+	<key>PasteSpecialChunkDelay</key>
+	<real>0.01</real>
+	<key>PasteSpecialChunkSize</key>
+	<integer>1024</integer>
+	<key>PasteSpecialRegex</key>
+	<string></string>
+	<key>PasteSpecialSubstitution</key>
+	<string></string>
+	<key>PasteSpecialUseRegexSubstitution</key>
+	<false/>
+	<key>PasteTabToStringTabStopSize</key>
+	<integer>4</integer>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
@@ -2108,7 +2200,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-07-28T23:12:17Z</date>
+	<date>2017-02-05T11:15:22Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
@@ -2118,7 +2210,7 @@
 	<key>TabViewType</key>
 	<integer>0</integer>
 	<key>UKCrashReporterLastCrashReportDate</key>
-	<real>1469748096</real>
+	<real>1473460224</real>
 	<key>UseBorder</key>
 	<false/>
 	<key>WordCharacters</key>
@@ -2128,6 +2220,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.0.5</string>
+	<string>3.0.13</string>
 </dict>
 </plist>
