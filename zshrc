@@ -15,7 +15,7 @@ export PATH="/Applications/Postgres.app/Contents/Versions/9.5/bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 export GOPATH=$HOME/go
-
+export PATH=$PATH:$GOPATH/bin
 
 
 # Larger bash history (allow 32³ entries; default is 500)
