@@ -21,6 +21,10 @@ The theme is based on the wonderfully made [ys](https://github.com/robbyrussell/
 
 **NOTE**: You'll need at least iTerm2.9-nightly (aka 3.0)
 
+### Plug-ins
+1. `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
+
+
 ### Extra eye-candy
 
 There's a bunch of settings you might want to change in your profile in order to get the extra eye-candy.

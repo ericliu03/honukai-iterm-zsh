@@ -35,7 +35,11 @@ export HISTCONTROL=ignoredups
 export HISTIGNORE='ls:cd:cd -:pwd:exit:date:* --help'
 
 # Prefer US English and use UTF-8
-export LANG='en_US'
+export LANG='en_US'echo 'export PATH="/usr/local/opt/openssl/bin:$PATH"' >> ~/.zshrc
+
+For compilers to find openssl you may need to set:
+  export LDFLAGS="-L/usr/local/opt/openssl/lib"
+  export CPPFLAGS="-I/usr/local/opt/openssl/include"
 export LC_ALL='en_US.UTF-8'
 
 # Always enable colored `grep` output
@@ -73,4 +77,9 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
+
+# open ssl
+export PATH="/usr/local/opt/openssl/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/openssl/lib"
+export CPPFLAGS="-I/usr/local/opt/openssl/include"
 
