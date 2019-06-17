@@ -80,5 +80,4 @@ export PATH="/usr/local/opt/openssl/bin:$PATH"
 export LDFLAGS="-L/usr/local/opt/openssl/lib"
 export CPPFLAGS="-I/usr/local/opt/openssl/include"
 
-/usr/libexec/java_home -v 1.8
 export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
