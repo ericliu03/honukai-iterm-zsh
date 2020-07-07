@@ -6,6 +6,10 @@
 
 ## Installation
 
+### Install Oh My ZSH first after install zsh
+
+https://github.com/ohmyzsh/ohmyzsh
+
 ### Theme
 
 The theme is based on the wonderfully made [ys](https://github.com/robbyrussell/oh-my-zsh/blob/master/themes/ys.zsh-theme) theme from the official [oh-my-zsh repo](https://github.com/robbyrussell/oh-my-zsh).
@@ -28,6 +32,8 @@ The theme is based on the wonderfully made [ys](https://github.com/robbyrussell/
 ### Extra eye-candy
 
 There's a bunch of settings you might want to change in your profile in order to get the extra eye-candy.
+
+copy `com.googlecode.iterm2.plist` to `/Users/${USER}/Library/Preferences/com.googlecode.iterm2.plist`
 
 #### **Text** tab:
 
